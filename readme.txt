@@ -4,8 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: george page post name page id title
 Requires at least: 2.8.6
 Tested up to: 2.8.6
-Stable tag: 1.0
-Donate link: 
+Stable tag: 1.1
 
 George Page Name Retrieval adds needed functionality to wordpress developers for retrieving a post/page name, id, and title
 
@@ -27,14 +26,26 @@ information requested. There are three API's for this purpose:
 1. george_get_post_id(); => Returns the Post ID of the current page/post
 2. george_get_post_title(); => Returns the Page Title
 3. george_get_post_name(); => Returns the permalink page/post name
+4. george_get_pageid_by_permalink($permalink); => Returns the page/post ID for the specified permalink
+5. george_get_permalink_by_id($id); => Returns the permalink for the specified page/post id
+6. george_display_shopp_cart_count($url); => Returns a link to your Shopp shopping cart page with the total cart items as, Shopping Cart (0) [requires Shopp to be installed and activated]
 
 You can also invoke the API's from your Wordpress pages/posts through short codes.
 
-[george-query choice:id|title|name] => where,
+[george-query choice="id|title|name|outid|outperm" value="permalink|id|url"] => where,
 
 - id = the page/post id
 - title = the page/post title
 - name = the page/post permalink name
+- outperm = contains the permalink of the page id to retrieve
+- outid = contains the id of the page from the specified permalink
+- shopp = gets the cart count for your Shopp shopping cart
+
+You enter one of the following values between double quotes:
+
+- permalink for choice outid
+- id for choice outperm
+- url is the url of your Shopp shopping cart page
 
 
 **Customization**
@@ -42,6 +53,9 @@ You can also invoke the API's from your Wordpress pages/posts through short code
 The code written for this plugin is straight forward and can easily be customized.
 If you do customized this plugin and submit your changes to us, we will make honorable
 mention of your customization in the Credits.
+
+You can edit the george_display_shopp_cart_count() function to return a different text other
+than "Shopping cart"
 
 == Installation ==
 
@@ -69,6 +83,10 @@ Please do not be afraid of asking questions?<br>
 
 
 == Changelog ==
+
+= 1.1 =
+* Added three new functions with shortcodes: george_get_pageid_by_permalink($permalink);, george_get_permalink_by_id($id);, and george_display_shopp_cart_count($url);
+
 
 = 1.0 =
 * Created
