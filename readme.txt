@@ -3,7 +3,7 @@ Contributors: phkcorp2005
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9674139
 Tags: george page post name page id title
 Requires at least: 2.8.6
-Tested up to: 2.8.6
+Tested up to: 2.9
 Stable tag: 1.1
 
 George Page Name Retrieval adds needed functionality to wordpress developers for retrieving a post/page name, id, and title
