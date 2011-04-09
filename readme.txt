@@ -73,6 +73,8 @@ We make honorable mention to anyone who helps make George a better plugin!
 
 == Contact ==
 
+For support, go to http://support.phkcorp.com and request to join the "George Page Name Retrieval" forum.
+
 PHK Corporation at phkcorp2005@gmail.com or www.phkcorp.com?do=contact
 
 == Frequently Asked Questions ==
